@@ -67,7 +67,7 @@ The extension contains several code samples that demonstrate how authentication 
 - Single Page Application (SPA): JavaScript, React, Angular 
 
 
-![Sample download](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/resources/readme-images/Picture4.png)
+![Sample download](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Picture4.png?raw=true)
 
 ### Explorer view 
 
