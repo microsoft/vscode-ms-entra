@@ -4,7 +4,7 @@ The Microsoft Entra External ID extension for Visual Studio Code lets you quickl
 
 This extension provides a quick basic setup that automatically creates a tenant for your application and prepares it for your users. It also streamlines your workflow by automatically populating values such as application IDs into your configuration file for a smoother setup process.
 
-![extension](resources/readme-images/Extension.gif)
+![extension](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Extension.gif?raw=true)
 
 ## Getting Started
 
@@ -40,7 +40,7 @@ Based on whether you have an existing Azure account, you can get started by sele
 
 - If you already have an Azure account, select **Use my subscription**.  
 
-![Welcome](resources/readme-images/Picture1.png)
+![Welcome](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Picture1.png?raw=true)
 
 ### Free trial option 
 
@@ -48,17 +48,17 @@ Microsoft Entra External ID provides a dedicated tenant that contains your custo
 
 If you have an Azure subscription and are creating a tenant with customer configuration for the first time, you will also have an option to create a trial tenant. 
 
-![Welcome](resources/readme-images/TrialTenantCreationStep.gif)
+![Welcome](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/TrialTenantCreationStep.gif?raw=true)
 
 ### Sign-up and sign-in experience and branding 
 
 In the guided walkthrough, you can quickly configure sign-in methods and design the look and feel of the user experience. Choose a background color, image, or logo to be displayed in sign-up pages.   
 
-![Sign in and Branding](resources/readme-images/signin%20and%20branding.gif)
+![Sign in and Branding](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/signin%20and%20branding.gif?raw=true)
 
 You can also configure sign-in experiences in the **Getting Started** section in the explorer view. 
 
-![Getting Started](resources/readme-images/Picture2.png)
+![Getting Started](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Picture2.png?raw=true)
 
 ### Sample applications 
 
@@ -66,15 +66,14 @@ The extension contains several code samples that demonstrate how authentication 
 
 - Single Page Application (SPA): JavaScript, React, Angular 
 
-- Web app: ASP\.NET Core 
 
-![Sample download](resources/readme-images/Picture3.png)
+![Sample download](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/resources/readme-images/Picture4.png)
 
 ### Explorer view 
 
 The explorer view displays the resources in your tenant and lets you quickly view their properties. You can view configuration information about your registered applications, authentication user flows, and company branding configuration. You can also navigate directly to the Microsoft Entra admin center from the explorer view if you need to further configure or manage the resource. 
 
-![Explorer View](resources/readme-images/Explorer-view.gif)
+![Explorer View](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Explorer-view.gif?raw=true)
 
 ## Issue reporting and feedback 
 - **Report Issues**: Encountered a bug or facing a challenge with our extension? Report it directly on our [GitHub repository](https://github.com/microsoft/vscode-ms-entra/issues). 
