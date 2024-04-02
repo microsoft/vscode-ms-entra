@@ -1,0 +1,150 @@
+{
+  "$id": "https://raw.githubusercontent.com/microsoft/vscode-ms-entra/main/schemas/sampleConfigV1.schema.json",
+  "title": "SampleConfig",
+  "description": "App-binding configuration for an MSAL quickstart sample.",
+  "type": "object",
+  "required": ["_version", "replacements", "credential", "appUpdates"],
+  "additionalProperties": true,
+  "properties": {
+    "_version": {
+      "type": "string",
+      "enum": ["1"]
+    },
+    "replacements": {
+      "description": "Defines string tokens to replace with directory values in source files, binding the sample code to an app registration.",
+      "type": "object",
+      "additionalProperties": {
+        "description": "Path to a source file to inject values from the directory into.",
+        "type": "object",
+        "required": ["tokens"],
+        "properties": {
+          "out": {
+            "description": "(optional) If provided, the resulting file content is saved to a new file at this location instead of overwriting the source file.",
+            "type": "string",
+            "format": "filepath"
+          },
+          "tokens": {
+            "type": "object",
+            "additionalProperties": {
+              "description": "A string token in the source file to replace with a value from the directory.",
+              "type": "string",
+              "enum": ["tenantId", "tenantName", "tenantType", "appId", "redirectUri", "clientSecret", "authorityEndpointHost", "msGraphEndpointHost"]
+            }
+          }
+        }
+      }
+    },
+    "credential": {
+      "description": "Defines what kind of credential the sample uses.",
+      "type": "string",
+      "enum": ["none", "secret"]
+    },
+    "appUpdates": {
+      "description": "Defines required properties on the app registration to work with this sample.",
+      "type": "object",
+      "properties": {
+        "requiredResourceAccess": {
+          "description": "A list of OAuth2 permission scopes used by the sample.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "description": "A resource API called by the sample",
+            "type": "object",
+            "required": ["resourceAppId", "resourceAccess"],
+            "properties": {
+              "x-ms-resourceAppName": {
+                "description": "(Optional) Name of the resource API.",
+                "examples": ["Microsoft Graph"],
+                "type": "string"
+              },
+              "resourceAppId": {
+                "description": "The unique appId of the resource API.",
+                "examples": ["00000003-0000-0000-c000-000000000000"],
+                "type": "string",
+                "format": "guid",
+                "pattern": "^[0-9A-Fa-f]{8}-(?:[0-9A-Fa-f]{4}-){3}[0-9A-Fa-f]{12}$"
+              },
+              "resourceAccess": {
+                "description": "The list of scopes required from this resource.",
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "description": "A scope required from this resource.",
+                  "type": "object",
+                  "required": ["id", "type"],
+                  "properties": {
+                    "x-ms-name": {
+                      "description": "(Optional) Name of the resource scope.",
+                      "examples": ["User.Read", "offline_access", "openid"],
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "The unique id of the OAuth2 permission scope.",
+                      "type": "string",
+                      "format": "guid",
+                      "pattern": "^[0-9A-Fa-f]{8}-(?:[0-9A-Fa-f]{4}-){3}[0-9A-Fa-f]{12}$"
+                    },
+                    "type": {
+                      "description": "Whether the permission is a delegated (app+user) Scope or an application (app-only) Role.",
+                      "type": "string",
+                      "enum": ["Scope", "Role"]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "publicClient": {
+          "description": "Configuration for samples that act as an installed client.",
+          "type": "object",
+          "required": ["redirectUris"],
+          "properties": {
+            "redirectUris": {
+              "description": "Redirect URIs used by the sample.",
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        },
+        "spa": {
+          "description": "Configuration for samples that act as a single-page application (web client).",
+          "type": "object",
+          "required": ["redirectUris"],
+          "properties": {
+            "redirectUris": {
+              "description": "Redirect URIs used by the sample.",
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "format": "uri",
+                "examples": ["http://localhost:3000/"]
+              }
+            }
+          }
+        },
+        "web": {
+          "description": "Configuration for samples that act as a web service.",
+          "type": "object",
+          "required": ["redirectUris"],
+          "properties": {
+            "redirectUris": {
+              "description": "Redirect URIs used by the sample.",
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
