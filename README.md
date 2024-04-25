@@ -65,6 +65,7 @@ You can also configure sign-in experiences in the **Getting Started** section in
 The extension contains several code samples that demonstrate how authentication is implemented in different application types and development languages. You can choose one of the following application samples from the within the extension and it will automatically be configured with your sign-in experience: 
 
 - Single Page Application (SPA): JavaScript, React, Angular 
+- Web app: Node.js (Express), ASP.NET Core 
 
 
 ![Sample download](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Picture4.png?raw=true)
