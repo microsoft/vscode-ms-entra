@@ -1,6 +1,6 @@
-# Microsoft Entra External ID Extension for Visual Studio Code (Preview) 
+# Microsoft Entra External ID Extension for Visual Studio Code 
 
-The Microsoft Entra External ID extension for Visual Studio Code lets you quickly add authentication to applications for customer identity and access management (CIAM) scenarios. You can set up a customized, branded sign-in experience for external users of applications without leaving the development environment. 
+The Microsoft Entra External ID extension for Visual Studio Code helps you integrate customer identity and access management (CIAM) into applications without leaving the IDE. The extension offers a seamless, guided experience to set up a customized, branded sign-in experience for external users and enables you to configure a sample External ID application, all within the development environment.
 
 This extension provides a quick basic setup that automatically creates a tenant for your application and prepares it for your users. It also streamlines your workflow by automatically populating values such as application IDs into your configuration file for a smoother setup process.
 
@@ -8,7 +8,7 @@ This extension provides a quick basic setup that automatically creates a tenant 
 
 ## Getting Started
 
-Microsoft Entra External ID is a service that can be added on to an existing Azure subscription.  If you don’t already have an Azure subscription, you can set up a free trial of Microsoft Entra External ID within VS code and get started by configuring a sample app. 
+Microsoft Entra External ID is a service that can be added on to an existing Azure subscription.  If you don’t already have an Azure subscription, you can set up a free trial of Microsoft Entra External ID (preview) within VS code and get started by configuring a sample app. 
 
 For more information about Microsoft Entra External ID and how to use the extension, see Get started with [Microsoft Entra External ID extension for Visual Studio Code](https://learn.microsoft.com/en-gb/entra/external-id/customers/quickstart-trial-setup).  
 
@@ -32,7 +32,7 @@ A step by step series of examples that tell you how to get a development environ
 
 ## Overview  
 
-Integrating authentication into your customer-facing applications is a crucial step in securing resources and customer data. The Microsoft Entra External ID extension for Visual Studio Code helps you quickly implement a solution for customized sign-in and secure access to your application right within the development environment. 
+Integrating authentication into your customer-facing applications is a crucial step in securing resources and customer data. The Microsoft Entra External ID extension for Visual Studio Code helps you kickstart identity integration for customer-facing apps by enabling you to easily create external tenants, configure sign-in for external users, and set up an External ID sample, all within your IDE.
 
 Based on whether you have an existing Azure account, you can get started by selecting one of the following: 
 
@@ -42,7 +42,7 @@ Based on whether you have an existing Azure account, you can get started by sele
 
 ![Welcome](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Picture1.png?raw=true)
 
-### Free trial option 
+### Free trial option (preview)
 
 Microsoft Entra External ID provides a dedicated tenant that contains your customer-facing apps, External ID resources, and directory of user accounts. You can create a tenant from within this extension even if you don’t already have an Azure account, by setting up a free trial.  
 
@@ -60,20 +60,26 @@ You can also configure sign-in experiences in the **Getting Started** section in
 
 ![Getting Started](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Picture2.png?raw=true)
 
+### Try out your sign-in experience
+
+In the guided walkthrough, you can also preview your configured sign-in experience and test the flow by creating your first user
+
+![Try out your sign-in experience](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Picture5.png?raw=true)
+
 ### Sample applications 
 
 The extension contains several code samples that demonstrate how authentication is implemented in different application types and development languages. You can choose one of the following application samples from the within the extension and it will automatically be configured with your sign-in experience: 
 
 - Single Page Application (SPA): JavaScript, React, Angular 
-
+- Web App: Node.js (Express), ASP.NET Core, Python (Flask), Python (Django), Java Servlet
 
 ![Sample download](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Picture4.png?raw=true)
 
-### Explorer view 
+### Manage resources
 
-The explorer view displays the resources in your tenant and lets you quickly view their properties. You can view configuration information about your registered applications, authentication user flows, and company branding configuration. You can also navigate directly to the Microsoft Entra admin center from the explorer view if you need to further configure or manage the resource. 
+The manage resources view displays the resources in your tenant and lets you quickly view their properties. You can view configuration information about your registered applications, user flows, and company branding configuration. You can also navigate directly to the Microsoft Entra admin center from the explorer view if you need to further configure or manage the resource. 
 
-![Explorer View](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Explorer-view.gif?raw=true)
+![Manage resources](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Explorer-view.gif?raw=true)
 
 ## Issue reporting and feedback 
 - **Report Issues**: Encountered a bug or facing a challenge with our extension? Report it directly on our [GitHub repository](https://github.com/microsoft/vscode-ms-entra/issues). 
