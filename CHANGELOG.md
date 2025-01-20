@@ -1,5 +1,15 @@
 # Changelog
 
+
+## Version 1.0.5 [2025-01-17]
+## Updates
+* Endpoint details are now visible in the tenant webview.
+* Added the option to rename application names directly within the extension.
+* The tenant context menu now includes a 'Delete' option for easy redirection to the Entra Admin Center for tenant deletion.
+* Provided option to update sign-in method for existing user flows.
+* Provided an option to create tenants using subscription in Manage Resources section.
+* Added a ‘Tutorials’ section to guide users on how to add external ID in their own app.
+
 ## Version 1.0.4 [2024-11-21]
 ## Updates
 * Added "Preview Sign-In Experience" option to the Explorer view.
