@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.0.6 [2025-01-23]
+## Updates
+* Provided an option to create a new resource group when setting up a tenant
+* Improved validation when updating the application display name
+* Improved handling of the various "cancellation" notifications
 
 ## Version 1.0.5 [2025-01-17]
 ## Updates
