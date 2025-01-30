@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 1.0.7 [2025-01-29]
+* Fixed broken browser redirect link button on when upgrading trial tenant.
+* Enhanced accessibility by introducing offsets in all webview links
+
 ## Version 1.0.6 [2025-01-23]
 ## Updates
 * Provided an option to create a new resource group when setting up a tenant
