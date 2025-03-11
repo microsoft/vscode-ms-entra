@@ -105,7 +105,7 @@ For users experiencing this issue, there is a workaround available:
 
 We are actively working on a permanent fix and will update this section as soon as the issue is resolved.
 
-![Workaround Sign In Issue](https://github.com/microsoft/vscode-ms-entra/blob/diegoje/update-readme/resources/readme-images/Signin-workaround.png)
+![Workaround Sign In Issue](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Signin-workaround.png)
 
 ## Issue reporting and feedback 
 - **Report Issues**: Encountered a bug or facing a challenge with our extension? Report it directly on our [GitHub repository](https://github.com/microsoft/vscode-ms-entra/issues). 
