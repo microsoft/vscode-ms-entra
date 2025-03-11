@@ -113,6 +113,8 @@ For users experiencing this issue, there is a workaround available:
 
 We are actively working on a permanent fix and will update this section as soon as the issue is resolved.
 
+![Workaround Sign In Issue](https://github.com/microsoft/vscode-ms-entra/blob/diegoje/update-readme/resources/readme-images/Signin-workaround.png)
+
 ## Support and resources 
 
 [GitHub Repository](https://github.com/microsoft/vscode-ms-entra) 
