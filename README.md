@@ -81,14 +81,6 @@ The manage resources view displays the resources in your tenant and lets you qui
 
 ![Manage resources](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Explorer-view.gif?raw=true)
 
-## Issue reporting and feedback 
-- **Report Issues**: Encountered a bug or facing a challenge with our extension? Report it directly on our [GitHub repository](https://github.com/microsoft/vscode-ms-entra/issues). 
-
-- **Provide feedback**: Have suggestions or want to share your thoughts on the extension? We’d love to hear from you! Fill out our [feedback form](https://go.microsoft.com/fwlink/?linkid=2257518) to let us know how we can improve or what you love about the extension. 
-
-## Telemetry 
-VS Code collects usage data and sends it to Microsoft to help improve our products and services. Read our privacy statement to learn more. If you don’t wish to send usage data to Microsoft, you can set the `telemetry.enableTelemetry` setting to false.. Learn more about telemetry handling in VS Code [FAQ](https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting). 
-
 ## Known issues
 
 ### Authentication Bug
@@ -114,6 +106,14 @@ For users experiencing this issue, there is a workaround available:
 We are actively working on a permanent fix and will update this section as soon as the issue is resolved.
 
 ![Workaround Sign In Issue](https://github.com/microsoft/vscode-ms-entra/blob/diegoje/update-readme/resources/readme-images/Signin-workaround.png)
+
+## Issue reporting and feedback 
+- **Report Issues**: Encountered a bug or facing a challenge with our extension? Report it directly on our [GitHub repository](https://github.com/microsoft/vscode-ms-entra/issues). 
+
+- **Provide feedback**: Have suggestions or want to share your thoughts on the extension? We’d love to hear from you! Fill out our [feedback form](https://go.microsoft.com/fwlink/?linkid=2257518) to let us know how we can improve or what you love about the extension. 
+
+## Telemetry 
+VS Code collects usage data and sends it to Microsoft to help improve our products and services. Read our privacy statement to learn more. If you don’t wish to send usage data to Microsoft, you can set the `telemetry.enableTelemetry` setting to false.. Learn more about telemetry handling in VS Code [FAQ](https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting). 
 
 ## Support and resources 
 
