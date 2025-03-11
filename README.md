@@ -81,6 +81,32 @@ The manage resources view displays the resources in your tenant and lets you qui
 
 ![Manage resources](https://github.com/microsoft/vscode-ms-entra/blob/main/resources/readme-images/Explorer-view.gif?raw=true)
 
+## Known issues
+
+### Authentication Bug
+
+**Issue**:
+
+There is a known issue with the authentication process in the latest version of our VS Code extension. This problem arises due to a change made by the VS Code team in the way users authenticate to log into the EEID portal. The new version uses MSAL (Microsoft Authentication Library), but there seems to be an issue with it affecting both Windows and Mac users.
+
+**Affected Versions**:
+
+- Windows: All versions except Insider version 1.99
+- Mac: All versions
+
+**Workaround**:
+
+For users experiencing this issue, there is a workaround available:
+1. Go to `Settings`.
+1. Navigate to `Extensions`.
+1. Go to `Microsoft Account`.
+1. Select `Microsoft`.
+1. Switch the Microsoft-authentication: Implementation from `MSAL` to `Classic`.
+
+We are actively working on a permanent fix and will update this section as soon as the issue is resolved.
+
+![Workaround Sign In Issue](https://github.com/microsoft/vscode-ms-entra/blob/diegoje/update-readme/resources/readme-images/Signin-workaround.png)
+
 ## Issue reporting and feedback 
 - **Report Issues**: Encountered a bug or facing a challenge with our extension? Report it directly on our [GitHub repository](https://github.com/microsoft/vscode-ms-entra/issues). 
 
